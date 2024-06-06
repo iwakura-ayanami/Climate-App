@@ -5,7 +5,7 @@ export const WheatherApp = () => {
   
        
         const urlBase = 'https://api.openweathermap.org/data/2.5/weather';
-        const API_KEY = '9255e1b7d4e4b827ddbce20c0e63b2aa'
+        const API_KEY = import.meta.env.VITE_API_KEY
 
         const [ciudad, setCiudad] = useState('')
         const [dataClima, setdataClima] = useState(null)
